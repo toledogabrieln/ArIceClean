@@ -165,15 +165,10 @@ main {
   opacity: 0.7;
 }
 
-.logo-mark {
-  width: 36px;
-  height: 36px;
-  color: #1e88e5;
-}
-
-.logo-mark svg {
-  width: 100%;
-  height: 100%;
+.logo-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -327,123 +322,17 @@ main {
   color: #1a1a1a;
 }
 
-.hero-panel {
-  background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
-  border-radius: 12px;
-  padding: 2rem;
-  border: 1px solid #ddd;
-  position: relative;
-}
-
-.panel-frame {
+.hero-visual {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.panel-top {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.75rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #666;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
-.panel-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #4caf50;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-.gauge-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.gauge {
-  width: 140px;
-  height: 140px;
-}
-
-.gauge-track {
-  fill: none;
-  stroke: #ddd;
-  stroke-linecap: round;
-}
-
-.gauge-fill {
-  fill: none;
-  stroke: url(#gaugeGradient);
-  stroke-linecap: round;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 100;
-  animation: fillGauge 3s ease-out forwards;
-}
-
-@keyframes fillGauge {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.gauge-tick {
-  stroke: #bbb;
-  stroke-linecap: round;
-}
-
-.gauge-readout {
-  text-align: center;
-}
-
-.gauge-value {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1e88e5;
-}
-
-.gauge-unit {
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #999;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 0.25rem;
-}
-
-.panel-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #ddd;
-}
-
-.panel-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.95rem;
-  color: #666;
-}
-
-.panel-row .ok {
-  color: #4caf50;
-  font-weight: 600;
+.hero-logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* ===== TRUST STRIP ===== */
@@ -974,10 +863,6 @@ main {
     gap: 3rem;
   }
 
-  .hero-panel {
-    order: -1;
-  }
-
   .about-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -1070,10 +955,6 @@ main {
   .hero-readout {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .hero-panel {
-    display: none;
   }
 
   .hero-actions {
@@ -1254,6 +1135,11 @@ main {
   .trust-item svg {
     width: 28px;
     height: 28px;
+  }
+
+  .logo-image {
+    width: 32px;
+    height: 32px;
   }
 }
 
