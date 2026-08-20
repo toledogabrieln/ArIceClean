@@ -1,0 +1,63 @@
+# ===== ROBOTS.TXT - AR ICE CLEAN =====
+# Orientações para web crawlers (Google, Bing, etc.)
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /index.html
+
+# Bloquear acesso a arquivos sensíveis
+Disallow: /.htaccess
+Disallow: /.env
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /*.php$
+Disallow: /*?
+Disallow: /private/
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /cache/
+
+# Crawler delay (em segundos)
+Crawl-delay: 1
+
+# Velocidade de requisição (requisições por segundo)
+Request-rate: 30/60
+
+# Sitemap (descomentar quando o sitemap.xml estiver disponível)
+# Sitemap: https://ariceclean.com.br/sitemap.xml
+
+# ===== GOOGLE =====
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# ===== BING =====
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ===== OUTROS BOTS =====
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ===== BLOQUEAR BOTS NÃO DESEJADOS =====
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MojeekBot
+Disallow: /
